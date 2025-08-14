@@ -1,6 +1,4 @@
-// Main JavaScript for НейроКофейня
 
-// DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeApp();
 });
@@ -1456,5 +1454,6 @@ style.textContent = `
         border-color: #4ecdc4;
     }
 `;
+
 
 document.head.appendChild(style); 
