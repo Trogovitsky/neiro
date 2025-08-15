@@ -11,6 +11,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/theme-toggle.css">
     
     <style>
         * {
@@ -84,20 +85,7 @@
             color: #4ecdc4;
         }
 
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            transition: width 0.3s ease;
-        }
 
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
 
         .auth-buttons {
             display: flex;
@@ -126,10 +114,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
+
 
         /* Hero Section */
         .hero {
@@ -148,7 +133,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/img_bg_3.jpg') center/cover;
+            background: var(--bg-image-3) center/cover;
             opacity: 0.3;
             z-index: -1;
         }
@@ -482,12 +467,12 @@
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="menu.html">Меню</a></li>
                     <li><a href="services.html">О нас</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="../login.php" class="btn btn-secondary">Войти</a>
-                <a href="../register.php" class="btn btn-primary">Регистрация</a>
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+                <a href="register.html" class="btn btn-primary">Регистрация</a>
             </div>
             <div class="mobile-menu-btn">
                 <span></span>
@@ -578,7 +563,7 @@
                             <div class="menu-item-price">320₽</div>
                         </div>
                     </div>
-                    <p class="menu-item-description">Классический эспрессо с нейро-стимуляторами и ноотропными добавками для максимальной концентрации и ясности ума.</p>
+                    <p class="menu-item-description">Классический эспрессо с нейро-рецептом и ноотропными добавками для максимальной концентрации и ясности ума.</p>
                     <div class="menu-item-ingredients">
                         <span class="ingredient-tag">Эспрессо</span>
                         <span class="ingredient-tag">Нейро-стимуляторы</span>
@@ -746,5 +731,7 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/auth.js"></script>
 </body>
 </html> 

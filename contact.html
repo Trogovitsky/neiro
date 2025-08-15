@@ -11,6 +11,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/theme-toggle.css">
     
     <style>
         * {
@@ -84,20 +85,7 @@
             color: #4ecdc4;
         }
 
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            transition: width 0.3s ease;
-        }
 
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
 
         .auth-buttons {
             display: flex;
@@ -126,10 +114,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        }
+
 
         /* Hero Section */
         .hero {
@@ -148,7 +133,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/img_bg_3.jpg') center/cover;
+            background: var(--bg-image-3) center/cover;
             opacity: 0.3;
             z-index: -1;
         }
@@ -525,8 +510,8 @@
                 </ul>
             </nav>
             <div class="auth-buttons">
-                <a href="../login.php" class="btn btn-secondary">Войти</a>
-                <a href="../register.php" class="btn btn-primary">Регистрация</a>
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+                <a href="register.html" class="btn btn-primary">Регистрация</a>
             </div>
             <div class="mobile-menu-btn">
                 <span></span>
@@ -593,8 +578,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="contact-text">
-                        <h4>Адрес</h4>
-                        <p>г. Москва, ул. Примерная, д. 123<br>Метро: Примерная</p>
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" style="color:#eee;font-size:12px;position:absolute;top:14px;">Моховая улица — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 25px;"></iframe></div>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -634,8 +618,8 @@
             <div class="map-placeholder">
                 <div style="text-align: center;">
                     <i class="fas fa-map" style="font-size: 3rem; margin-bottom: 1rem; color: #4ecdc4;"></i>
-                    <p>Интерактивная карта будет загружена здесь</p>
-                    <p style="font-size: 1rem; margin-top: 0.5rem;">г. Москва, ул. Примерная, д. 123</p>
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" style="color:#eee;font-size:12px;position:absolute;top:14px;">Моховая улица — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.610771%2C55.752247&mode=whatshere&whatshere%5Bpoint%5D=37.610771%2C55.752171&whatshere%5Bzoom%5D=16.67&z=16.67" width="2000px" height="455px" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 25px;"></iframe></div>
+
                 </div>
             </div>
         </div>
@@ -731,5 +715,7 @@
     </section>
 
     <script src="js/main.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/auth.js"></script>
 </body>
 </html> 
